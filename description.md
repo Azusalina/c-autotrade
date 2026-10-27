@@ -102,3 +102,7 @@ No real wallet key, approval, funded swap, mempool replacement, wallet recovery,
 - [Coinbase wrapped assets](https://www.coinbase.com/cbbtc): Base cbBTC address and wrapping/custody context.
 - [Coinbase public candles API](https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-product-candles): hourly candle schema and public endpoints.
 - [Web3.py transactions](https://web3py.readthedocs.io/en/stable/transactions.html): local signing, transaction preparation and broadcast APIs.
+
+## Independent repository migration (2026-10-27)
+
+Source and existing local data moved to `/home/a/Documents/products/c-autotrade`, retaining the product commit history. This checkout now owns its `.git` and `origin`; commit and push here independently. This supersedes the earlier hub-only or root-forwarded publication arrangement. Existing configuration locations, command names, and user data are preserved.

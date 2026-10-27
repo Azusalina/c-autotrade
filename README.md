@@ -11,7 +11,7 @@ No account signup, identity collection, analytics, or cloud database. Public-cha
 Requires Linux and Python 3.11 or newer. The demo and paper modes use only Python’s standard library.
 
 ```bash
-cd /home/a/Documents/someProducts/codex-autotrade
+cd /home/a/Documents/products/c-autotrade
 python3 app.py
 ```
 
@@ -40,3 +40,5 @@ Use a Base RPC provider that supports ordinary EVM reads, fee estimation, and fi
 **Pause automation** stops entries and automated exits. **Stop new transactions** also stops a requested close sequence; already broadcast transactions may still confirm. **Close to USDC** requires a typed confirmation and may take multiple scans for approvals and swaps. Keep the process running for automated monitoring and exits. Native ETH gas is separate from the USDC budget and equity chart.
 
 Data lives in `data/autotrade.sqlite3`, separately for each mode. Use `--port 4387` if needed, or `--data-dir /your/path` for a separate mandate. Do not run multiple app instances against the same wallet or discard a live ledger with pending transactions. Capital is fixed after the first start. Stop with Ctrl+C; no autostart service is installed. To uninstall, stop the process and remove the app directory, preserving any live ledger and managing wallet balances/allowances through your wallet first.
+
+This is an independent repository at `/home/a/Documents/products/c-autotrade`, published as [Azusalina/c-autotrade](https://github.com/Azusalina/c-autotrade). Run `git add`, `git commit`, and `git push` here. Its source has moved out of `someProducts`; hub pushes no longer publish this project.
